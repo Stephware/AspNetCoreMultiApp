@@ -1,0 +1,19 @@
+@ApiHost = http://localhost:5173
+
+GET {{ApiHost}}/api/products
+Accept: application/json
+
+###
+
+GET {{ApiHost}}/api/products/1
+Accept: application/json
+
+###
+
+POST {{ApiHost}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Example Product",
+  "price": 99.50
+}
